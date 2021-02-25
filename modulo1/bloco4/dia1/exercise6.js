@@ -1,4 +1,5 @@
-let pecaXadrez="peão";
+let pecaXadrez = "Peão";
+pecaXadrez = pecaXadrez.toLowerCase();
 
 switch (pecaXadrez) {
     case "peão":
