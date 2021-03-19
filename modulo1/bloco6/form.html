@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <main class="conatiner-sm">
+        <header>
+            <h1 class="h1">Formulário</h1>
+        </header>
+        <div>
+            <form action="" method="get">
+                <fieldset> <legend>Dados pessoais</legend>
+                    <label class="form-text" for="input-name">Nome:</label>
+                    <input type="text" name="name" id="input-name" class="line">   
+                    <br>
+                    <label class="form-text" for="input-email">E-mail:</label>
+                    <input type="text" name="email" id="input-email" class="line">
+                    <br>
+                    <label class="form-text" for="input-cpf">CPF:</label>
+                    <input type="text" name="cpf" id="input-cpf" class="line">
+                    <br>
+                    <label class="form-text" for="input-endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="input-endereco" class="line">
+                    <br>
+                    <label class="form-text" for="input-cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="input-cidade" class="line">
+                    <br>
+                    <select name="estado" id="dropdown-estado" class="line">
+                    </select>
+                    <br>
+                    <label class="form-text" for="radio-casa">Casa</label>
+                    <input type="radio" name="tipo-residencia" id="radio-casa" class="line" required>
+                    <label class="form-text" for="radio-apartamento">Apartamento</label>
+                    <input type="radio" name="tipo-residencia" id="radio-apartamento" class="line" required>
+                </fieldset>
+                <br>
+                <fieldset><legend>Dados do currículo</legend>
+                    <label class="form-text" for="txt-curriculo" class="line">Resumo do Currículo</label>
+                    <br>
+                    <textarea name="resumo-curriculo" id="txt-curriculo" cols="30" rows="5" maxlength="1000" required></textarea>
+                    <br>
+                    <label class="form-text" for="input-cargo">Cargo:</label>
+                    <input type="text" name="cargo" id="input-cargo" class="line">
+                    <br>
+                    <label class="form-text" for="input-desc-cargo">Descrição do cargo:</label>
+                    <input type="text" name="desc-do-cargo" id="input-desc-cargo" maxlength="500" class="line" required>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                </form>
+        </div>
+    </main>    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
