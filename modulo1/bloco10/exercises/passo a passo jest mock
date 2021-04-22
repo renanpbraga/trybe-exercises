@@ -1,0 +1,11 @@
+1 - criar a constante com as funções em objeto, fazendo o require('./arquivo')
+
+2- chamar o jest.mock('./arquivo);
+
+3- criar o ambiente de testes descriibe();
+
+4- criar o teste
+	4.1- test('descrição', () => { call back;
+	4.2- reimplementar a função a ser testada (função.mockinplementation(parametros);
+	4.3- expect(função(parametros).atributo teste;
+	
