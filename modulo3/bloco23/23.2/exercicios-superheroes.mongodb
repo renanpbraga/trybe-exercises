@@ -1,0 +1,63 @@
+// mostra os super herois existentes no bd
+use ("class");
+db.superheroes.find();
+
+// conta quantos super herois existem no bd
+use ("class");
+db.superheroes.count();
+
+// mostra quantos super herois possuem altura menor que 1.80m
+use ("class");
+db.superheroes.find({ 'aspects.height': { $lt: 180 }});
+
+// conta quantos super herois possuem altura menor que 1.80m
+use ("class");
+db.superheroes.count({ 'aspects.height': { $lt: 180 }});
+
+// conta quantos usper herois possuem altura de até 1.80m
+use ("class");
+db.superheroes.count({ 'aspects.height': { $lte: 180 }});
+
+// mostra um super heroi com com 2.00m ou mais de altura
+use ("class");
+db.superheroes.findOne({ 'aspects.height': { $lt: 200 }});
+
+// mostra os super herois com 2.00m ou mais
+use ("class");
+db.superheroes.find({ 'aspects.height': { $gte: 200 }});
+
+// conta quantos super herois possuem altura de 2.00m ou mais
+use ("class");
+db.superheroes.count({ 'aspects.height': { $gte: 200 }});
+
+// mostra os super herois que possuem altura maior ou igual a 2.00m
+use ("class");
+db.superheroes.find({ 'aspects.height': { $gte: 200 }});
+
+// seleciona todos os super herois com olhos verdes que
+use ("class");
+db.superheroes.find({ 'aspects.eyeColor': { $eq: 'green' }});
+
+// conta quantos super herois possuem olhos azuis
+use ("class");
+db.superheroes.count({ 'aspects.eyeColor': { $eq: 'blue' }});
+
+//seleciona todos os super herois com cabelos pretos ou que sejam carecas
+use ("class");
+db.superheroes.find({
+    'aspects.hairColor':{ $in:['Black', 'No Hair']}});
+
+//conta quantos super herois de cabelos pretos ou carecas existem
+use ("class");
+db.superheroes.count({
+    'aspects.hairColor':{ $in:['Black', 'No Hair']}});
+
+//retorna q auqntidade de super herois com altura menor que 1.80  usando operador $not
+use ("class");
+db.superheroes.count({
+    'aspects.height':{ $not: { $gt: 180 }}});
+
+// seleciona todos os suer herois que não sejam humanos e que não sejam maiores que 1.80m
+use ("class");
+db.superheroes.find({
+    race:{ $not: [{ $eq: 'Human' },}});

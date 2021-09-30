@@ -1,0 +1,2 @@
+use("restaurants");
+db.restaurants.count({ borough: { $eq: ['Bronx', 'Queens']  }});
